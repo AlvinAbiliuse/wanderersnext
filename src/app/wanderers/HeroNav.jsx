@@ -42,7 +42,10 @@ function HeroSection() {
 
 export default function HeroNav() {
 	return (
-		<div className="heroNav">
+		<div
+			className="heroNav"
+			style={{ backgroundImage: 'url("/heroImage.svg")' }}
+		>
 			<Nav />
 			<HeroSection />
 		</div>

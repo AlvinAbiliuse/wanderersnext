@@ -2,7 +2,9 @@
 	width: 100%;
 	font-size: 0.8em;
 	font-weight: 200;
-	background: url("/heroImage.svg");
+	/* 
+	  background: url("/heroImage.svg");
+		*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	letter-spacing: 0.1em;
