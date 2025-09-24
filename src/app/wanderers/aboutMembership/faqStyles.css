@@ -1,0 +1,94 @@
+#aboutMembership #FAQ {
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 60px;
+	max-width: 720px;
+	margin-top: 50px;
+	padding: 50px;
+	padding-bottom: 0;
+	h2 {
+		color: #d2a98a;
+		position: relative;
+		top: 35px;
+		font-size: 1.4em;
+		font-weight: 400;
+		font-style: italic;
+		letter-spacing: 0.15em;
+		margin-bottom: 40px;
+	}
+
+	.card {
+		padding-bottom: 20px;
+		max-width: 500px;
+	}
+	h3 {
+		letter-spacing: 0.1em;
+		font-size: 0.85em;
+		font-weight: 350;
+	}
+	.cardUpper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	button {
+		font-family: "Inter";
+		opacity: 1;
+		width: 30px;
+		color: inherit;
+		font-size: 1.5em;
+		background: none;
+		font-weight: 200;
+		border: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	button:hover {
+		cursor: pointer;
+	}
+
+	.cardInfo {
+		max-height: 0px;
+		opacity: 0;
+		overflow: hidden;
+		transition: max-height 0.5s ease-out;
+		padding-right: 50px;
+		transition:
+			opacity 0.5s ease-out,
+			max-height 0.5s linear;
+	}
+	.cardInfo p {
+		font-size: 0.85em;
+		font-weight: 300;
+		line-height: 1.25em;
+		letter-spacing: 0.1em;
+		padding-top: 10px;
+		padding-bottom: 30px;
+	}
+
+	.open + .cardInfo {
+		max-height: 550px;
+		opacity: 1;
+	}
+}
+@media (max-width: 750px) {
+	#aboutMembership #FAQ {
+		max-width: 600px;
+		display: block;
+		h2 {
+			top: 0;
+		}
+	}
+}
+
+@media (max-width: 420px) {
+	#aboutMembership #FAQ {
+		padding: 20px;
+		padding-bottom: 0;
+		.cardInfo {
+			padding-right: 0;
+		}
+	}
+}

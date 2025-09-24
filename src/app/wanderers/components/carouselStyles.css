@@ -1,0 +1,31 @@
+.carousel {
+	max-width: 500px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.carousel img {
+	width: 100%;
+	aspect-ratio: 1/0.75;
+	object-fit: cover;
+	margin-bottom: 10px;
+}
+
+.carousel .numbers {
+	width: 50%;
+	margin: 10px auto;
+	display: flex;
+	justify-content: space-between;
+}
+.carousel .numbers div {
+	width: 10px;
+	height: 10px;
+	background-color: rgba(90, 90, 90);
+	border-radius: 50px;
+	transition: 0.5s;
+}
+
+.carousel .numbers .current {
+	background-color: rgba(150, 150, 150);
+	width: 20px;
+}

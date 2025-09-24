@@ -1,0 +1,67 @@
+.cardContainerPromo {
+	display: flex;
+	gap: 30px;
+	overflow: auto;
+	padding-bottom: 50px;
+	scrollbar-width: thin;
+	scrollbar-color: lightgray transparent;
+
+	.card {
+		background: black;
+		flex-shrink: 0;
+		max-width: 280px;
+		border: 1px solid rgba(255, 255, 255, 0.5);
+	}
+
+	img {
+		width: 100%;
+		aspect-ratio: 2/1.8;
+		object-fit: cover;
+	}
+
+	.lowerCard {
+		padding: 15px 20px;
+		background-color: #000a0c;
+		height: 250px;
+		scrollbar-width: thin;
+		scrollbar-color: rgba(50, 50, 50) transparent;
+		overflow: auto;
+	}
+	.lowerCard:hover {
+	}
+
+	.card h3 {
+		font-weight: 380;
+		margin-bottom: 20px;
+	}
+
+	p {
+		font-weight: 300;
+		font-size: 0.9em;
+		margin-bottom: 10px;
+	}
+	/*
+    .card a {
+        display: block;
+        background-color: #ffffff;
+        color: black;
+        max-width: 170px;
+        text-align: center;
+        padding: 8px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+		*/
+}
+
+@media (max-width: 425px) {
+	.cardContainerPromo {
+		gap: 20px;
+	}
+}
+
+@media (max-width: 350px) {
+	.cardContainerPromo .card {
+		max-width: 250px;
+	}
+}

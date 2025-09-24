@@ -1,0 +1,24 @@
+  .announcementCard {
+    max-width: 500px;
+    padding: 25px 35px;
+    margin-bottom: 50px;
+    background-color: #00000012;
+    border: 1px solid #f1ccb04f;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #f1846652;
+    backdrop-filter: blur(10px);
+    span {
+      color: #f1caae;
+      font-size: 1.1em;
+    }   
+    > p { 
+      margin-bottom: 25px;
+      font-weight: 500;
+      line-height: 1.3em;
+    }   
+    .smallName {
+      margin-bottom: 0;
+      font-size: 0.9em;
+    }   
+  }
+

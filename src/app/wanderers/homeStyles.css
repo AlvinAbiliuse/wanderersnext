@@ -1,0 +1,60 @@
+:root {
+	--text-color: white;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	line-height: 1.2em;
+	letter-spacing: 0.05em;
+	box-sizing: border-box;
+}
+
+#home {
+	outline: 1px solid red;
+	font-family: "Inter", sans-serif;
+	background: #1c1c1c;
+	background-image: url("/homeBackgroundDesktop.svg");
+	background-size: 100%;
+
+	font-size: 1.1em;
+	color: var(--text-color);
+}
+
+.mainContainer > div,
+.footer > div {
+	margin: 0 auto;
+	max-width: 920px;
+	padding: 20px 40px;
+}
+
+.heroNav.navBar {
+	margin: 0 auto;
+	max-width: 1025px;
+	padding: 20px 10px;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	text-shadow: 0 0 10px gray;
+	cursor: pointer;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+@media (max-width: 450px) {
+	#home {
+		background-image: url("/homeBackgroundMobile.svg") !important;
+		background-size: 100% !important;
+	}
+}

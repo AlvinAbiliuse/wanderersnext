@@ -1,0 +1,75 @@
+.dialogCTA {
+	max-width: 450px;
+	padding: 30px;
+	margin-top: 20px;
+	.top {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 10px;
+		align-items: center;
+	}
+	.top h2 {
+		font-size: 2.1em;
+		letter-spacing: 0.3em;
+		font-weight: 450;
+	}
+	.close {
+		display: block;
+		padding-bottom: 0;
+		background: none;
+		border: none;
+	}
+	.close:hover {
+		cursor: pointer;
+	}
+	.lower p {
+		font-size: 1.2em;
+		font-weight: 400;
+		letter-spacing: 0.1em;
+	}
+
+	.lower {
+		margin-bottom: 30px;
+	}
+
+	.close img {
+		width: 25px;
+		height: 25px;
+		filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%)
+			hue-rotate(50deg) brightness(104%) contrast(101%);
+	}
+
+	.form {
+		margin-bottom: 50px;
+	}
+	> p {
+		font-weight: 300;
+		letter-spacing: 0.1em;
+	}
+}
+
+#fullWindow {
+	margin: 0 auto;
+	margin-top: 40px;
+	background-color: #2e7c99;
+	background: url("/contactOverlay.svg");
+	border: none;
+	color: white;
+}
+
+#fullWindow::backdrop {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 450px) {
+	.dialogCTA {
+		max-width: 450px;
+		margin-top: 0px;
+	}
+
+	#fullWindow {
+		margin: 0px 0px;
+		max-width: 450px;
+		max-height: 100vh;
+	}
+}

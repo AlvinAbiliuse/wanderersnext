@@ -1,0 +1,142 @@
+#aboutMembership #membership {
+	max-width: 720px;
+	margin: 0 auto;
+	display: grid;
+	padding-top: 40px;
+	grid-template-columns: repeat(auto-fit, minmax(305px, 1fr));
+	gap: 40px;
+	grid-row-gap: 0;
+	.card {
+		padding: 20px;
+		padding-bottom: 0;
+	}
+	.card h3 {
+		letter-spacing: 0.1em;
+		font-weight: 200;
+		margin-bottom: 40px;
+		font-style: italic;
+	}
+	.card h3 span {
+		font-weight: 400;
+		color: #f1ccb0;
+		font-style: normal;
+	}
+	.card h2 {
+		color: #f1ccb0;
+		font-weight: 390;
+		font-size: 1.4em;
+		margin-bottom: 40px;
+	}
+	.card h2:nth-of-type(2) {
+		font-size: 1.1em;
+		color: black;
+	}
+	.perks {
+		display: flex;
+		gap: 10px;
+	}
+	p img {
+		width: 18px;
+		margin-right: 5px;
+		align-self: flex-start;
+		margin-top: 2px;
+	}
+	.card p {
+		margin-bottom: 20px;
+	}
+	.second.card p {
+		padding-left: 10px;
+	}
+	.card .disclaimer {
+		font-size: 0.7em;
+		padding-left: 5px;
+	}
+}
+#aboutMembership .membershipDetails {
+	max-width: 720px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+#aboutMembership .membershipFees {
+	background-color: rgba(3, 19, 19, 0.7);
+	padding: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	* {
+		font-size: 0.95em;
+		font-weight: 350;
+		letter-spacing: 0.1em;
+	}
+	h3 {
+		background-color: #01292d;
+		padding: 10px;
+		font-size: 1.5em;
+		font-weight: 400;
+		letter-spacing: 0.1em;
+		border-radius: 5px;
+	}
+	td,
+	th {
+		padding: 5px;
+	}
+	th {
+		padding: 10px 5px;
+		color: #f1ccb0;
+		text-align: left;
+	}
+	p {
+		margin: 15px 5px;
+	}
+}
+#aboutMembership .membershipCard {
+	max-width: 350px;
+	padding: 20px 50px;
+	margin: 0 10px;
+	background: url("/membershipBackground.jpg");
+	background-position: center;
+	background-size: cover;
+	h3 {
+		font-size: 1.8em;
+		font-weight: 400;
+	}
+	p {
+		margin-top: 10px;
+		font-weight: 300;
+	}
+	button {
+		text-align: center;
+		display: block;
+		max-width: 220px;
+		margin: 10px auto;
+		font-size: 1em;
+		margin-top: 60px;
+		padding: 10px 20px;
+		border: 2px solid black;
+		border-radius: 50px;
+		color: white;
+		background-color: rgba(255, 255, 255, 0.2);
+		border-color: rgba(255, 255, 255, 0.1);
+		backdrop-filter: blur(8px);
+	}
+	button:hover {
+		border-color: rgba(255, 255, 255, 0.5);
+	}
+}
+
+@media (max-width: 768px) {
+	#aboutMembership .membershipDetails {
+		flex-direction: column-reverse;
+		gap: 50px;
+		align-items: center;
+		> * {
+			max-width: 350px;
+		}
+	}
+}
+@media (max-width: 640px) {
+	#aboutMembership #membership {
+		gap: 20px;
+	}
+}

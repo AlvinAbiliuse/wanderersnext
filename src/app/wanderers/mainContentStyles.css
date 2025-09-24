@@ -1,0 +1,329 @@
+#home #about {
+	overflow: hidden;
+	display: flex;
+	gap: 20px;
+	position: relative;
+	top: -30px;
+	padding-top: 0;
+	padding-bottom: 60px;
+	h1 {
+		position: relative;
+		left: -5px;
+		color: #f1ccb0;
+		font-size: 3em;
+		font-weight: 500;
+		letter-spacing: 0.1em;
+	}
+	h3 {
+		font-weight: 500;
+		letter-spacing: 0.125em;
+		font-size: 2em;
+	}
+	.tick {
+		filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7477%)
+			hue-rotate(126deg) brightness(106%) contrast(97%);
+		width: 15px;
+		margin-right: 15px;
+	}
+
+	li {
+		display: flex;
+		align-items: center;
+		margin-bottom: 5px;
+	}
+	.leftCard > div > div:nth-of-type(1) {
+		width: 500px;
+		background: url("/sunAsset.png");
+		background-size: 68%;
+		background-repeat: no-repeat;
+		background-position: right 1.5em top 100%;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		padding-right: 250px;
+	}
+
+	.leftCard > div > div > * {
+		margin-top: 30px;
+	}
+
+	.leftCard div:nth-of-type(2) {
+		display: flex;
+		justify-content: space-between;
+	}
+	.rightCard {
+		position: relative;
+		top: 70px;
+		padding: 0 80px;
+		background-color: #1c1c1c;
+	}
+}
+#home #about .leftCard > div > div > a {
+	display: inline-block;
+	margin-top: 5px;
+	font-weight: 500;
+	color: #d993c2;
+}
+
+#home #experience {
+	max-width: 1024px;
+	margin-bottom: 80px;
+	h2 {
+		text-align: center;
+		margin-bottom: 20px;
+		letter-spacing: 0.2em;
+		font-weight: 400;
+		color: #f1ccb0;
+	}
+	.cardContainer {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 40px;
+	}
+	.card {
+		background-color: rgba(23, 23, 23, 0.4);
+		padding: 25px;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		backdrop-filter: blur(5px);
+		border: 1px solid rgba(255, 255, 255, 0.2);
+	}
+	.card h2 {
+		font-size: 2.2em;
+	}
+
+	p {
+		font-size: 0.85em;
+		font-weight: 300;
+		letter-spacing: 0.1em;
+		line-height: 1.3em;
+		margin: 20px 0;
+	}
+
+	a {
+		display: inline-block;
+		margin: 5px 20px;
+		font-weight: 300;
+		font-size: 1.2em;
+		margin-bottom: 0px;
+		text-align: center;
+		padding: 10px 10px;
+		background-color: rgba(68, 68, 68, 0.3);
+		border: 1px solid rgba(255, 255, 255, 0.2);
+		border-radius: 30px;
+	}
+}
+
+#home #offerevents {
+	overflow: hidden;
+	h2 {
+		padding: 15px;
+		font-weight: 400;
+		letter-spacing: 0.1em;
+		margin-bottom: 20px;
+	}
+	.eventContainer {
+		display: flex;
+	}
+
+	img {
+		max-width: 350px;
+		object-fit: cover;
+	}
+	.offerCard {
+		max-width: 370px;
+		background-color: #0e0e0e;
+		padding: 30px;
+	}
+	.offerCard h3 {
+		font-size: 1.5em;
+		font-weight: 500;
+		margin-bottom: 10px;
+	}
+	p {
+		font-size: 0.9em;
+		line-height: 1.2em;
+		margin-bottom: 40px;
+	}
+	a {
+		font-size: 0.9em;
+		padding: 7px 15px;
+		background: white;
+		color: black;
+	}
+}
+
+#home #guestbookMembership {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 65px;
+	align-items: end;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	button:hover {
+		cursor: pointer;
+	}
+}
+
+#home #guestbookMembership .guestbook {
+	width: 390px;
+	font-weight: 350;
+	h3 {
+		color: #f1ccb0;
+		font-size: 2em;
+		font-weight: 650;
+	}
+	> p {
+		margin-top: 20px;
+		padding: 10px;
+	}
+	.numbersContainer {
+		width: 60%;
+		display: flex;
+		gap: 10px;
+		justify-content: space-between;
+		margin: 0 auto;
+	}
+	.number {
+		margin-top: 25px;
+		width: 10px;
+		height: 10px;
+		border-radius: 30px;
+		background-color: rgba(100, 100, 100);
+		transition: all 0.8s ease;
+	}
+	.number.current {
+		background-color: rgba(170, 170, 170);
+		width: 15px;
+	}
+
+	.number:hover {
+		cursor: pointer;
+		background-color: rgba(150, 150, 150);
+	}
+}
+#home #guestbookMembership .guestbookCarousel {
+	display: flex;
+	overflow: hidden;
+	flex-wrap: 0;
+	height: 450px;
+	width: 390px%;
+	.guest {
+		border-radius: 10px;
+		margin-top: 20px;
+		display: grid;
+		padding: 40px 30px;
+		flex-shrink: 0;
+		width: 390px;
+		background: linear-gradient(
+			180deg,
+			rgba(122, 29, 29, 1) 0%,
+			rgba(48, 12, 12, 1) 100%
+		);
+		transition: all 0.8s ease;
+	}
+	p {
+		align-self: center;
+	}
+	.guest .title {
+		font-size: 1.6em;
+		font-weight: 350;
+		margin-bottom: 10px;
+	}
+
+	.guest .review {
+		height: 150px;
+		overflow: auto;
+	}
+
+	.guest .reviewerName {
+		font-size: 2em;
+		font-weight: 500;
+		margin-top: 10px;
+		padding-top: 7px;
+		border-top: 1px solid white;
+	}
+}
+
+#home #guestbookMembership .membership {
+	margin-top: 50px;
+	padding: 20px 50px;
+	background: url("/membershipBackground.jpg");
+	background-position: center;
+	background-size: cover;
+	h3 {
+		font-size: 1.8em;
+		font-weight: 400;
+	}
+	p {
+		margin-top: 10px;
+		font-weight: 300;
+	}
+	button {
+		text-align: center;
+		color: inherit;
+		display: block;
+		max-width: 220px;
+		margin: 40px auto;
+		padding: 10px 20px;
+		font-size: 1em;
+		border: 2px solid black;
+		border-radius: 50px;
+		background-color: rgba(255, 255, 255, 0.2);
+		border-color: rgba(255, 255, 255, 0.1);
+		backdrop-filter: blur(8px);
+	}
+	button:hover {
+		border-color: rgba(255, 255, 255, 0.5);
+	}
+}
+
+@media (max-width: 450px) {
+	#home #guestbookMembership .guestbook {
+		width: 300px;
+		margin: 0 auto;
+		.guest {
+			width: 300px;
+		}
+	}
+	#home .leftCard > div > div:nth-of-type(1) {
+		padding: 5px;
+	}
+
+	#home .leftCard h1 {
+		text-align: center;
+	}
+	#home #offerevents {
+		padding: 10px;
+		.card {
+		}
+	}
+	#home #experience {
+		padding: 20px;
+	}
+	#home #guestbookMembership {
+		padding: 20px;
+	}
+}
+@media (max-width: 800px) {
+	#home #guestbookMembership {
+		display: block;
+	}
+}
+
+@media (max-width: 790px) {
+	#home #about {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 340px) {
+	#home #guestbookMembership .guestbook {
+		width: 280px;
+		margin: 0 auto;
+		.guest {
+			width: 280px;
+		}
+	}
+}
